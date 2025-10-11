@@ -3,67 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Card</title>
+  <title>Aniket Gavali - Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="profile">
-    <!-- Header -->
-    <div class="card-header">
-      <img src="me.jpg" alt="Profile Picture" class="profile-img">
-      <h2 class="name">Aniket Gavali</h2>
-      <h3 class="role">Web Developer</h3>
-    </div>
-
-    <!-- Bio -->
-    <p class="bio">
-      Hi 👋 I’m Aniket. I design and build modern, functional, and responsive Full Stack websites that focus on user experience.
-    </p>
-
-    <!-- Skills -->
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Java</span>
-      <span>C/C++</span>
-      <span>Python</span>
-      <span>Oracle DB</span>
-      <span>MySQL</span>
-    </div>
-
-    <!-- Stats -->
-    <div class="stats">
-      <div>
-        <h3>5+</h3>
-        <p>Projects</p>
+    <!-- Left Sidebar -->
+    <div class="sidebar">
+      <div class="profile-img-wrapper">
+        <img src="me.jpg" alt="Aniket Gavali" class="profile-img">
+        <div class="status-badge"></div>
       </div>
-   
-      <div>
-        <h3>10+</h3>
-        <p>Certificates</p>
+      <h1>Aniket Gavali</h1>
+      <p class="role">Full Stack Developer</p>
+      <p class="bio">Building modern web experiences with clean code and creative solutions.</p>
+      
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/aniketgavali/" target="_blank" class="social-link" title="LinkedIn">💼</a>
+        <a href="https://www.github.com/aniket-g-3101" target="_blank" class="social-link" title="GitHub">💻</a>
+        <a href="mailto:aniket.g.dev@gmail.com" class="social-link" title="Email">📧</a>
+      </div>
+
+      <button class="contact-btn" id="contactBtn">Get In Touch</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">5+</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Certificates</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">9</div>
+          <div class="stat-label">Technologies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2+</div>
+          <div class="stat-label">Years</div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-item">HTML/CSS</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">React</div>
+          <div class="skill-item">Java</div>
+          <div class="skill-item">C/C++</div>
+          <div class="skill-item">Python</div>
+          <div class="skill-item">Oracle DB</div>
+          <div class="skill-item">MySQL</div>
+          <div class="skill-item">Git</div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-card">
+          <div class="project-title">Full Stack Web Applications</div>
+          <div class="project-meta">React • Node.js • Database</div>
+          <div class="project-desc">Responsive applications with modern UI and efficient backend integration.</div>
+        </div>
+        <div class="project-card">
+          <div class="project-title">Algorithm Solutions</div>
+          <div class="project-meta">C++ • Java • Python</div>
+          <div class="project-desc">Optimized solutions for complex problems focusing on performance.</div>
+        </div>
+      </div>
+
+      <!-- Quote -->
+      <div class="section">
+        <div class="quote-box">
+          <p class="quote-text">"Code is like humor. When you have to explain it, it's bad."</p>
+        </div>
       </div>
     </div>
-
-    <!-- Links -->
-    <div class="links">
-      <a href="https://www.linkedin.com/in/aniketgavali/" target="_blank" class="linkedin">LinkedIn</a>
-      <a href="https://www.github.com/aniket-g-3101" target="_blank" class="github">GitHub</a>
-    </div>
-
-    <!-- Quote -->
-    <blockquote class="quote">
-      “Code is like humor. When you have to explain it, it’s bad.”
-    </blockquote>
-
-    <!-- Contact -->
-    <button class="contact-btn">Contact Me</button>
-
-    <!-- Footer -->
-    <footer class="card-footer">
-      <p>Email: <a href="mailto:aniket.g.dev@gmail.com">aniket.g.dev@gmail.com</a></p>
-    </footer>
   </div>
+
+  <!-- Contact Modal -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal">×</button>
+      <h2>Let's Connect</h2>
+      <div class="contact-info">
+        <a href="mailto:aniket.g.dev@gmail.com" class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div class="contact-details">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">aniket.g.dev@gmail.com</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/aniketgavali/" target="_blank" class="contact-item">
+          <div class="contact-icon">💼</div>
+          <div class="contact-details">
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">@aniketgavali</div>
+          </div>
+        </a>
+        <a href="https://www.github.com/aniket-g-3101" target="_blank" class="contact-item">
+          <div class="contact-icon">💻</div>
+          <div class="contact-details">
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">@aniket-g-3101</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const contactBtn = document.getElementById('contactBtn');
+    const contactModal = document.getElementById('contactModal');
+    const closeModal = document.getElementById('closeModal');
+
+    contactBtn.addEventListener('click', () => {
+      contactModal.classList.add('active');
+    });
+
+    closeModal.addEventListener('click', () => {
+      contactModal.classList.remove('active');
+    });
+
+    contactModal.addEventListener('click', (e) => {
+      if (e.target === contactModal) {
+        contactModal.classList.remove('active');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && contactModal.classList.contains('active')) {
+        contactModal.classList.remove('active');
+      }
+    });
+  </script>
 </body>
 </html>
